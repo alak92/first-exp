@@ -26,7 +26,7 @@ time = prompt('Введите дату в формате YYYY-MM-DD', ''),//Вт
  appData.expenses.a1 = a2;
  appData.expenses.a3 = a4;
 
-alert(appData.budget / 30);// Бюджет на 1 день
+alert(appData.budget / 30);// Бюджет на 1 день.
 
 
 
