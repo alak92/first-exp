@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict';
 
 // var number=5;
@@ -9,36 +8,25 @@
 // undefined;
 // var obj = {};
 
-let money 
-=======
-'use strict';
-
-// var number=5;
-// var string = "word";
-// var sym = Symbol();
-// var boolean = true;
-// null;
-// undefined;
-// var obj = {};
-
-let money = +prompt("Ваш бюджет в месяц?", ''),
-time = prompt("Введите дату в формате YYYY-MM-DD", ''),
-appData = {
+let money = prompt("Ваш бюджет на месяц?", ''),//Первый вопрос
+time = prompt('Введите дату в формате YYYY-MM-DD', ''),//Второй вопрос
+ appData = {
     budget: money,
-    timeData:{},
+    timeData: time,
     expenses: {},
     optionalExpenses: {},
     income: [],
     savings: false
-};
+},// Создаем объект для данных
+ a1 = prompt('Введите обязательную статью расходов в этом месяце', ''),//Третий вопрос
+ a2 = prompt('Во сколько обойдется ?', ''),
+ a3 = prompt('Введите обязательную статью расходов в этом месяце', ''),
+ a4 = prompt('Во сколько обойдется ?', '');
 
-let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
-	a2 = prompt("Во сколько обойдется?", ''),
-	a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
-	a4 = prompt("Во сколько обойдется?", '');
+ appData.expenses.a1 = a2;
+ appData.expenses.a3 = a4;
 
-appData.expenses.a1 = a2;
-appData.expenses.a3 = a4;
+alert(appData.budget / 30);// Бюджет на 1 день
 
-alert(appData.budget / 30);
->>>>>>> 51cfc6b5673d35d890312e81a9285436c612fd05
+
+
